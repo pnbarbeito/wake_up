@@ -3,11 +3,11 @@
 
 ## Descripción
 
-Esta aplicación combina la librería nativa de windows con [Robotgo](https://github.com/go-vgo/robotgo) para mover el puntero y evitar el bloque de la PC. La aplicación se pensó para entornos corporativos el usuario no puede cambiar la configuración de energía de la PC. 
+Esta aplicación combina la librería nativa de windows con [Robotgo](https://github.com/go-vgo/robotgo) para mover el puntero y evitar el bloque de la PC. La aplicación se pensó para entornos corporativos donde el usuario no puede cambiar la configuración de energía de la PC. 
 
-Se opto por el uso de ambas librerías para mover el puntero debido a un BUG en [Robotgo](https://github.com/go-vgo/robotgo) que en equipos con multiples pantallas no mueve el puntero correctamente. Tampoco se uso solo la librería nativa ya que no evita el bloqueo de la PC.
+Se opto por el uso de ambas librerías para mover el puntero debido a un BUG en [Robotgo](https://github.com/go-vgo/robotgo), en equipos con multiples pantallas no mueve el puntero correctamente. Tampoco se uso solo la librería nativa ya que no evita el bloqueo de la PC.
 
-Para colocar la app en la bandeja del sistema se uso [systray](https://github.com/getlantern/systray), para la codificacion del icono a Go byte slice se uso [2goarray](https://github.com/cratonica/2goarray) y para el icono del ejecutable se uso [go-winres](https://github.com/tc-hib/go-winres).
+Para colocar la app en la bandeja del sistema se uso [systray](https://github.com/getlantern/systray), para la codificación del icono a Go byte slice se uso [2goarray](https://github.com/cratonica/2goarray) y para el icono del ejecutable se uso [go-winres](https://github.com/tc-hib/go-winres).
 
 ## Instrucciones de compilación
 
@@ -29,7 +29,8 @@ En el directorio ./winres se encuentra el archivo de configuración del icono de
   ```
 
 para cambiar el icono de la barra de tareas deberemos ir a la carpeta ./icon y reemplazar iconwin.ico por el icono deseado. Luego arrastrarlo y soltarlo sobre make_icon.bat. 
-En caso de usar Linux o Mac, hau un script llamado make_icon.sh que podemos ejecutar.
+
+En caso de usar Linux o Mac, hay un script llamado make_icon.sh que podemos ejecutar.
 Ambos Scripts se obtuvieron del ejemplo de [systray](https://github.com/getlantern/systray). 
 
 ### Compilación en Windows
