@@ -1,7 +1,7 @@
 on: [push]
 jobs:
   test:
-    runs-on: xeon-runner
+    runs-on: docker
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-go@v5
