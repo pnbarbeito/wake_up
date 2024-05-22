@@ -51,3 +51,4 @@ require (
 	github.com/go-vgo/robotgo v0.110.1
 	golang.org/x/sys v0.20.0 // indirect
 )
+
