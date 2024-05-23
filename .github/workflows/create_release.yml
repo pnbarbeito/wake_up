@@ -33,3 +33,4 @@ jobs:
       if: startsWith(github.ref, 'refs/tags/')
       with:
         files: wake_up.exe
+        token: ${{ secrets.wake_up }}
