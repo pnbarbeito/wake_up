@@ -33,11 +33,9 @@ En el directorio ./winres se encuentra el archivo de configuración del icono de
   ```
 
 para cambiar el icono de la barra de tareas deberemos ir a la carpeta ./icon y reemplazar iconwin.ico por el icono deseado. Luego arrastrarlo y soltarlo sobre make_icon.bat. 
+El Script se obtuvo del ejemplo de [systray](https://github.com/getlantern/systray). 
 
-En caso de usar Linux o Mac, hay un script llamado make_icon.sh que podemos ejecutar.
-Ambos Scripts se obtuvieron del ejemplo de [systray](https://github.com/getlantern/systray). 
-
-### Compilación en Windows
+### Compilación
 
   ```shell
   go build -ldflags -H=windowsgui -o nombre_del_ejecutable.exe
