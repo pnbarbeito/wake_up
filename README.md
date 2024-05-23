@@ -9,6 +9,10 @@ Se opto por el uso de ambas librerías para mover el puntero debido a un BUG en 
 
 Para colocar la app en la bandeja del sistema se uso [systray](https://github.com/getlantern/systray), para la codificación del icono a Go byte slice se uso [2goarray](https://github.com/cratonica/2goarray) y para el icono del ejecutable se uso [go-winres](https://github.com/tc-hib/go-winres).
 
+## Descarga
+
+Puedes descargar la aplicación desde la sección de [releases](https://github.com/pnbarbeito/wake_up/releases) de este repositorio.
+
 ## Instrucciones de compilación
 
 ### Pasos previos
@@ -37,20 +41,6 @@ Ambos Scripts se obtuvieron del ejemplo de [systray](https://github.com/getlante
 
   ```shell
   go build -ldflags -H=windowsgui -o nombre_del_ejecutable.exe
-  ```
-
-### Compilación cruzada desde Linux
-
-  ```shell
-  GOOS=windows GOARCH=amd64 go build -ldflags -H=windowsgui -o nombre_del_ejecutable.exe
-  ```
-
-### Compilación desde contenedor Docker
-
-Debes tener instalado [Docker](https://www.docker.com/get-started/).
-
-  ```shell
-  
   ```
 
 ## Agradecimientos
