@@ -1,23 +1,48 @@
 
+
+<center>
+
 # Wake Up!
+
+</center>
+<center>
 
 ## Descripción
 
-Wake Up! es una aplicación de escritorio que evita que tu PC se bloquee. Mueve el puntero del ratón cada cierto tiempo para evitar que la PC se bloquee por inactividad. No requiere instalación y una vez iniciada se coloca en la bandeja del sistema.
+</center>
+
+![icon](winres/icon16.png) Wake Up! es una aplicación de escritorio que evita que tu PC se bloquee. Mueve el puntero del ratón cada cierto tiempo para evitar el bloqueo y los cambios de estado por inactividad en apps como MS Teams. No requiere instalación y una vez iniciada se coloca en la bandeja del sistema.
+
+![systray](assets/image.png)
+
+<center>
 
 ## Descarga
 
+</center>
+
 Puedes descargar la aplicación desde la sección de [releases](https://github.com/pnbarbeito/wake_up/releases) de este repositorio.
+
+<center>
 
 ## Detalles de la aplicación
 
+</center>
+
 Esta aplicación combina la librería nativa de windows con [Robotgo](https://github.com/go-vgo/robotgo) para mover el puntero y evitar el bloque de la PC. La aplicación se pensó para entornos corporativos donde el usuario no puede cambiar la configuración de energía de la PC. 
 
-Se opto por el uso de ambas librerías para mover el puntero debido a un BUG en [Robotgo](https://github.com/go-vgo/robotgo), en equipos con multiples pantallas no mueve el puntero correctamente. Tampoco se uso solo la librería nativa ya que no evita el bloqueo de la PC.
+Se opto por el uso de ambas librerías para mover el puntero debido a un BUG en [Robotgo](https://github.com/go-vgo/robotgo), en equipos con multiples pantallas no mueve el puntero correctamente. Tampoco se uso solo la librería nativa ya que no evita el bloqueo de la pantalla.
 
 Para colocar la app en la bandeja del sistema se uso [systray](https://github.com/getlantern/systray), para la codificación del icono a Go byte slice se uso [2goarray](https://github.com/cratonica/2goarray) y para el icono del ejecutable se uso [go-winres](https://github.com/tc-hib/go-winres).
 
+<center>
+
 ## Instrucciones de compilación
+
+</center>
+
+<details>
+<summary></summary>
 
 ### Pasos previos
 
@@ -44,8 +69,13 @@ El Script se obtuvo del ejemplo de [systray](https://github.com/getlantern/systr
   ```shell
   go build -ldflags -H=windowsgui -o nombre_del_ejecutable.exe
   ```
+</details>
+
+<center>
 
 ## Agradecimientos
+
+</center>
 
  Agradecemos a los siguientes proyectos por su contribución a esta aplicación:
 
