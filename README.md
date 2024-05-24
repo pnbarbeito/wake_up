@@ -3,15 +3,19 @@
 
 ## Descripción
 
+Wake Up! es una aplicación de escritorio que evita que tu PC se bloquee. Mueve el puntero del ratón cada cierto tiempo para evitar que la PC se bloquee por inactividad. No requiere instalación y una vez iniciada se coloca en la bandeja del sistema.
+
+## Descarga
+
+Puedes descargar la aplicación desde la sección de [releases](https://github.com/pnbarbeito/wake_up/releases) de este repositorio.
+
+## Detalles de la aplicación
+
 Esta aplicación combina la librería nativa de windows con [Robotgo](https://github.com/go-vgo/robotgo) para mover el puntero y evitar el bloque de la PC. La aplicación se pensó para entornos corporativos donde el usuario no puede cambiar la configuración de energía de la PC. 
 
 Se opto por el uso de ambas librerías para mover el puntero debido a un BUG en [Robotgo](https://github.com/go-vgo/robotgo), en equipos con multiples pantallas no mueve el puntero correctamente. Tampoco se uso solo la librería nativa ya que no evita el bloqueo de la PC.
 
 Para colocar la app en la bandeja del sistema se uso [systray](https://github.com/getlantern/systray), para la codificación del icono a Go byte slice se uso [2goarray](https://github.com/cratonica/2goarray) y para el icono del ejecutable se uso [go-winres](https://github.com/tc-hib/go-winres).
-
-## Descarga
-
-Puedes descargar la aplicación desde la sección de [releases](https://github.com/pnbarbeito/wake_up/releases) de este repositorio.
 
 ## Instrucciones de compilación
 
